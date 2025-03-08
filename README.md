@@ -10,7 +10,7 @@ Two hypotheses will be tested:
 2. **Second Hypothesis**: AirPods volume increases when switching to other application(spotify).
 
 ## Motivation
-Understanding how application switching influences AirPods volume levels can provide insights i"nto user behavior and audio preferences. By studying data acquired from Apple Health, this project aims to:
+Understanding how application switching influences AirPods volume levels can provide insights into user behavior and audio preferences. By studying data acquired from Apple Health, this project aims to:
 
 - Determine if volume levels change significantly when switching between applications.
 - Identify patterns in volume adjustments across various app categories.
