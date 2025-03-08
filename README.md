@@ -1,7 +1,7 @@
 # AirPods Volume Analysis Across Applications
 
 ## Project Proposal
-I am a student from Sabancı University, Emre Törehan Törer, and this is my DSA210 term project. This project aims to analyze and correlate AirPods volume levels across different applications. The primary hypothesis being tested is whether the volume of AirPods changes when switching between applications.
+I am a student from Sabancı University, Emre Törehan Törer, and this is my DSA210 term project. This project aims to analyze and correlate earphones,headphones volume levels across different applications. The primary hypothesis being tested is whether the volume of AirPods changes when switching between applications.
 
 ## Hypotheses
 Two hypotheses will be tested:
