@@ -1,16 +1,16 @@
 # AirPods Volume Analysis Across Applications
 
 ## Project Proposal
-I am a student from Sabancı University, Ada Dila Akbulut, and this is my DSA210 term project. This project aims to analyze and correlate AirPods volume levels across different applications. The primary hypothesis being tested is whether the volume of AirPods changes when switching between applications.
+I am a student from Sabancı University, Emre Törehan Törer, and this is my DSA210 term project. This project aims to analyze and correlate AirPods volume levels across different applications. The primary hypothesis being tested is whether the volume of AirPods changes when switching between applications.
 
 ## Hypotheses
 Two hypotheses will be tested:
 
-1. **First Hypothesis**: AirPods volume decreases when switching to certain applications.
-2. **Second Hypothesis**: AirPods volume increases when switching to other applications.
+1. **First Hypothesis**: AirPods volume decreases when switching to certain applications(instagram, snapchat).
+2. **Second Hypothesis**: AirPods volume increases when switching to other application(spotify).
 
 ## Motivation
-Understanding how application switching influences AirPods volume levels can provide insights into user behavior and audio preferences. By studying data acquired from Apple Health, this project aims to:
+Understanding how application switching influences AirPods volume levels can provide insights i"nto user behavior and audio preferences. By studying data acquired from Apple Health, this project aims to:
 
 - Determine if volume levels change significantly when switching between applications.
 - Identify patterns in volume adjustments across various app categories.
@@ -52,26 +52,4 @@ This involves:
 - Trends in volume adjustment behaviors across different app categories.
 - Potential recommendations for optimizing user experience based on findings.
 
-## Repository Structure
-```
-📂 project-root
-│── 📄 README.md (Project overview)
-│── 📂 data (Raw and processed data files)
-│── 📂 notebooks (Jupyter notebooks for analysis)
-│── 📂 scripts (Python scripts for data processing)
-│── 📂 reports (Analysis results and visualizations)
-```
 
-## Tools & Technologies
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn, SciPy)
-- **Jupyter Notebooks** (For exploratory data analysis)
-- **Apple Health Data Export** (Primary data source)
-
-## Next Steps
-- Finalize data collection methodology.
-- Perform initial exploratory data analysis.
-- Develop statistical models to test the hypotheses.
-- Interpret results and document findings.
-
----
-Feel free to contribute or provide feedback on the project. Stay tuned for further updates!
