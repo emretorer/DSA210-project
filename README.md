@@ -1,55 +1,52 @@
-# AirPods Volume Analysis Across Applications
+# Headphone Exposure, Steps & Heart Rate Analysis
 
 ## Project Proposal
-I am a student from Sabancı University, Emre Törehan Törer, and this is my DSA210 term project. This project aims to analyze and correlate earphones,headphones volume levels across different applications. The primary hypothesis being tested is whether the volume of AirPods changes when switching between applications.
+I am a student from Sabancı University, Emre Törehan Törer, and this is my DSA210 term project. This project aims to analyze and correlate headphone volume levels with step counts and heart rate using Apple Health data. The core idea is to explore whether physical activity and physiological response relate to changes in headphone volume exposure.
 
 ## Hypotheses
 Two hypotheses will be tested:
 
-1. **First Hypothesis**: AirPods volume decreases when switching to certain applications(instagram, snapchat).
-2. **Second Hypothesis**: AirPods volume increases when switching to other application(spotify).
+1. **First Hypothesis**: Higher headphone volume levels correlate with increased heart rate.
+2. **Second Hypothesis**: Higher physical activity (steps) correlates with increased headphone volume exposure.
 
 ## Motivation
-Understanding how application switching influences AirPods volume levels can provide insights into user behavior and audio preferences. By studying data acquired from Apple Health, this project aims to:
+Understanding the interaction between headphone usage and physiological signals like heart rate and steps can provide insights into health, behavior, and user context. By studying data acquired from Apple Health, this project aims to:
 
-- Determine if volume levels change significantly when switching between applications.
-- Identify patterns in volume adjustments across various app categories.
-- Provide insights into optimizing user experience with audio settings.
+- Examine if increased volume coincides with increased physical activity or elevated heart rate.
+- Provide a foundation for potential feedback systems that promote healthier audio habits.
+- Demonstrate how everyday personal data can be used to gain insights into individual behavior.
 
 ## Data Sources and Preprocessing
 To ensure privacy, raw data will not be shared in the repository. Instead, all analysis scripts and processed, anonymized data will be provided. A `.gitignore` file will be used to exclude sensitive or unnecessary files.
 
 ### 1. Apple Health Data
 Exported data includes:
-- **Application Usage**: Names of applications where audio levels were recorded.
-- **Volume Levels**: Measured volume levels for each application.
-- **Timestamps**: Time when volume data was recorded.
+- **Headphone Audio Exposure**: Sound level in dB.
+- **Step Count**: Number of steps recorded.
+- **Heart Rate**: Heartbeat rate in BPM.
+- **Timestamps**: Time when each data point was recorded.
 
-The Apple Health data is exported in `.xml` format, then converted into structured `.csv` files containing:
-- Application names and corresponding volume levels.
-- Timestamped volume changes across applications.
+The Apple Health data is exported in `.xml` format, then converted into structured `.csv` files using Python. The data is grouped by minute intervals to ensure proper temporal alignment.
 
 ## Data Analysis
 ### 1. Data Preprocessing
-This involves:
-- Cleaning and structuring datasets from Apple Health.
-- Merging datasets by timestamp to align volume levels with application usage.
+- Extract `HeadphoneAudioExposure`, `StepCount`, and `HeartRate` from `export.xml`
+- Convert to `pandas` DataFrames and align on 1-minute intervals
+- Clean and normalize timestamp formats
 
 ### 2. Exploratory Data Analysis (EDA)
-- Analyzing distributions of volume levels across different applications.
-- Identifying trends in volume changes when switching between applications.
+- Plotting trends in volume, heart rate, and steps over time
+- Identifying peak usage periods and activity
 
 ### 3. Correlation Analysis
-- Investigating if certain applications correlate with increased or decreased AirPods volume.
-- Examining statistical relationships between app categories and volume levels.
+- Measuring correlation between volume and heart rate
+- Measuring correlation between volume and steps
 
 ### 4. Visualization
-- Using histograms, boxplots, heatmaps, bar charts, and line charts to represent volume trends and correlations.
-- Findings will be included in the **Data Visualization** section of the repository.
+- Using line plots and scatter plots to show relationships
+- Annotated graphs for peak patterns or outliers
 
 ## Expected Outcomes
-- Insights into whether application switching influences AirPods volume.
-- Trends in volume adjustment behaviors across different app categories.
-- Potential recommendations for optimizing user experience based on findings.
-
-
+- A combined CSV file with minute-level aggregation of volume, steps, and heart rate
+- Insights into behavioral or physiological patterns associated with audio volume exposure
+- Potential directions for health-focused feedback systems or research
