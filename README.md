@@ -349,35 +349,6 @@ The confusion matrix below evaluates the classification accuracy of the regressi
 **Conclusion**:  
 The model demonstrates high accuracy for low to moderate step count predictions. While some misclassification exists, especially at higher bins, the results indicate reliable performance and point toward targeted improvements for extreme activity ranges.
 
-##  Machine Learning Evaluation: Actual vs Predicted Step Counts
-
-###  Scatter Plot: Actual vs Predicted Step Count
-
-The scatter plot below visualizes the relationship between the actual step counts and the predicted values produced by the regression model.
-
-- The red diagonal line represents the ideal scenario where predicted values perfectly match the actual ones.
-- Most points cluster near this line, indicating that the model performs reasonably well.
-- Some outliers, especially at higher step counts, indicate instances where the model under- or over-predicted.
-
-This visualization provides an intuitive understanding of the model’s prediction quality.
-
-![scatter_actual_vs_predicted](https://github.com/user-attachments/assets/6b04f8d8-ba22-490d-87b6-74fd68f0ea2b)
-
----
-
-###  Confusion Matrix for Binned Step Counts
-
-To better understand classification performance in step count ranges, a confusion matrix was generated using binned step count values.
-
-- Step counts were grouped into discrete bins (e.g., 0–200, 200–400, etc.).
-- Diagonal values represent correct classifications — higher values here indicate good performance.
-- Off-diagonal values show misclassifications — they point to areas where the model could be improved.
-
-Key Takeaways:
-- The model correctly classified most of the low step count ranges.
-- Prediction errors increase slightly for mid-range values.
-
-![confusion_matrix_step_counts](https://github.com/user-attachments/assets/4818eeb0-46b8-42d3-86a3-3383737516c7)
 
 ##  Limitations and Future Work
 
