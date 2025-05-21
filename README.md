@@ -84,7 +84,8 @@ This visualization highlights **seasonal trends and fluctuations** in physical a
 
 Such visualizations help interpret user movement patterns and their changes throughout the year.
 
-![monthly_steps_bar_chart](https://github.com/user-attachments/assets/8e959236-02b8-498f-bb10-4238fc3f07c5)
+![monthly_steps_bar_chart (3)](https://github.com/user-attachments/assets/22fecad6-e03d-4b32-b774-dfec4c269c3b)
+
 
 ###  Heart Rate Distribution
 
@@ -119,7 +120,7 @@ The chart below shows the **monthly average heart rate (in bpm)** calculated fro
 
 This visualization helps identify potential changes in physical or physiological patterns over time.
 
-![monthly_heart_rate_bar_chart](https://github.com/user-attachments/assets/e58840f1-b65e-4227-85ed-09374230acd0)
+![monthly_heart_rate_bar_chart (2)](https://github.com/user-attachments/assets/b2fa6b3f-800b-41c3-bd41-f3b65f7a9eb9)
 
 ###  Distribution of Audio Exposure Levels
 
@@ -150,12 +151,14 @@ This bar chart shows the **average headphone audio levels per month** over the r
 
 This trend gives a useful overview of long-term audio exposure habits and seasonal shifts in user behavior.
 
-![monthly_audio_bar_chart](https://github.com/user-attachments/assets/a37b8039-cdf0-40bd-8f76-90d04c8704a7)
+![monthly_audio_bar_chart (1)](https://github.com/user-attachments/assets/99b76901-0b64-4ecf-8972-5e8fb457f2c2)
+
 ###  Physical Activity – Combined Apple Health Data
 
 Following composite visualization provides a comprehensive view of step counts, flights climbed, and walking/running distances in separate histograms. It enables a comparative analysis of different activity metrics and their respective distributions, offering a holistic perspective on physical activity patterns.
 
-![combined_physical_activity_histograms](https://github.com/user-attachments/assets/aefed65b-8b71-4647-a306-416875eea529)
+![combined_health_histograms (2)](https://github.com/user-attachments/assets/d17c6b59-e7f0-459e-afa7-fbdb72761d33)
+
 ###  Correlation Analysis
 
 The heatmap below shows the correlation between **step count**, **heart rate**, and **audio exposure level**.  
@@ -371,3 +374,4 @@ The model demonstrates high accuracy for low to moderate step count predictions.
 - **Real-Time Analysis Potential**: Develop systems that provide feedback or alerts when unhealthy volume or heart rate patterns are detected.
 - **Model Optimization**: Explore more advanced machine learning models and feature engineering to improve predictive performance and personalization.
 
+![night_hr_scatterplot](https://github.com/user-attachments/assets/13aab388-2171-403f-92a7-5d7e67533678)
