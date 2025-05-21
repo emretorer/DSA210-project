@@ -374,4 +374,43 @@ The model demonstrates high accuracy for low to moderate step count predictions.
 - **Real-Time Analysis Potential**: Develop systems that provide feedback or alerts when unhealthy volume or heart rate patterns are detected.
 - **Model Optimization**: Explore more advanced machine learning models and feature engineering to improve predictive performance and personalization.
 
+
+  
+##  Machine Learning Techniques
+
+###  Regression Task: Predicting Night Heart Rate
+
+**Objective:**  
+This regression task aimed to predict *Night Heart Rate (Night_HR)* using *Morning_HR*, *Afternoon_HR*, and *Evening_HR* as input features. A **Random Forest Regressor** was employed to model the relationship.
+
+---
+
+###  Results Overview
+
+- **Mean Squared Error (MSE):** ~91.24  
+  The average squared difference between the predicted and actual heart rate values.
+
+- **R² Score:** 0.096  
+  The model explains only a small fraction of the variance in night heart rate, indicating limited predictive power.
+
+---
+
+###  Interpretation
+
+- The model was able to learn some patterns from the input features but struggled to generalize effectively.
+- Most predicted values are concentrated around a narrow band, which may suggest **underfitting** or a tendency toward the average.
+- The low R² score reflects that the model performs only slightly better than random guessing.
+- To improve performance, incorporating additional contextual features (such as **step count**, **audio exposure**, or **sleep tracking data**) is recommended.
+
+---
+
+###  Scatter Plot: Actual vs Predicted Night Heart Rate
+
+
 ![night_hr_scatterplot](https://github.com/user-attachments/assets/13aab388-2171-403f-92a7-5d7e67533678)
+
+
+- Each point represents a daily prediction.
+- The red dashed line indicates perfect prediction (i.e., *predicted = actual*).
+- Points that deviate from the line show prediction errors.
+- The scatter is relatively wide, confirming the model's **moderate predictive capability** and the need for enhancement.
