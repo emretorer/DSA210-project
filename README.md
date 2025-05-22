@@ -173,45 +173,9 @@ Each cell reflects the strength of the linear relationship between the variables
 
 ##  Hypothesis Testing
 
-### 1. Headphone Audio Level vs Physical Activity
 
-My hypothesis is that **headphone audio exposure is higher when physical activity is low**, and that it tends to decrease when activity (such as steps) increases.
 
-#### Hypothesis:
-
-- **Null Hypothesis (H₀):**  
-  There is no difference in headphone audio levels between high-activity and low-activity periods.
-
-- **Alternative Hypothesis (H₁):**  
-  Headphone audio levels are significantly higher during periods of low physical activity.
-
-#### Method:
-
-- A threshold was defined to split the data into:
-  - **Low Activity**: Step count below the median
-  - **High Activity**: Step count above the median
-- A one-sided Mann-Whitney U test was applied to compare the distributions of audio levels.
-
-#### Results:
-
-- **U-Statistic**: 62,873.0  
-- **P-Value**: 0.0284  
-- **Reject** the null hypothesis at 0.05 significance level, indicating that headphone audio levels tend to be significantly **higher during low activity periods**.
-
-#### Summary Statistics:
-
-| Group         | Mean Audio Level (dB) |
-|---------------|-----------------------|
-| Low Activity  | 87.31 dB              |
-| High Activity | 82.94 dB              |
-
-#### Visualization:
-
-The bar chart below shows the average audio levels during low and high activity periods.
-
-![audio_vs_activity_barchart](https://github.com/user-attachments/assets/89370b1c-062e-4d5a-a263-73dfdac9d753)
-
-### 2. Heart Rate During Low and High Step Activity
+### 1. Heart Rate During Low and High Step Activity
 
 This hypothesis examines whether average heart rate is significantly higher during high activity (more steps) compared to low activity periods.
 
@@ -247,7 +211,7 @@ The bar chart below shows the average heart rate during low and high physical ac
 
 ![heart_rate_vs_steps](https://github.com/user-attachments/assets/d608e49a-6862-4acc-8765-a2d26e38e96c)
 
-### 3. Audio Exposure Level During Low and High Step Activity
+### 2. Audio Exposure Level During Low and High Step Activity
 
 This hypothesis investigates whether the average headphone audio level decreases when physical activity (steps) increases.
 
@@ -294,8 +258,6 @@ The analysis was conducted to evaluate whether audio exposure (volume), heart ra
 - **Step Count & Audio Level:**  
    A statistically significant decrease in average headphone audio level was detected during periods of higher step activity (p-value < 0.05).
 
-- **Heart Rate & Audio Level:**  
-   Although a slight positive correlation existed, the relationship between heart rate and audio level was not statistically significant (p-value > 0.05).
 
 ---
 
