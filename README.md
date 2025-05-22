@@ -374,43 +374,49 @@ The model demonstrates high accuracy for low to moderate step count predictions.
 - **Real-Time Analysis Potential**: Develop systems that provide feedback or alerts when unhealthy volume or heart rate patterns are detected.
 - **Model Optimization**: Explore more advanced machine learning models and feature engineering to improve predictive performance and personalization.
 
+# Machine learning
 
+## Confusion Matrix for Binned Night Heart Rate
+
+The confusion matrix below compares the predicted Night Heart Rate (HR) values to the actual values, after binning them into defined ranges.
+
+The model used for prediction is a Random Forest Regressor trained on `Morning_HR`, `Afternoon_HR`, and `Evening_HR`.
+
+### Binning Intervals:
+
+- 40–60 bpm  
+- 60–70 bpm  
+- 70–80 bpm  
+- 80–90 bpm  
+- 90–100 bpm  
+- 100–110 bpm  
+- 110–130 bpm
+
+### Interpretation:
+
+- Most predictions are concentrated in the 70–100 bpm range, which reflects the overall distribution of the data.
+- The diagonal values indicate correct bin predictions; off-diagonal values indicate misclassifications.
+- The highest accuracy is observed in the 70–80 and 80–90 bpm bins, where the predicted values closely align with the actual HR.
+- Very few or no samples are seen in extreme low or high HR bins (e.g., 40–60 or 110–130), indicating class imbalance or limited edge cases in the dataset.
   
-##  Machine Learning Techniques
+![confusion_matrix_night_hr (1)](https://github.com/user-attachments/assets/a3d5c554-e5e6-4bfc-94f0-e96cbbb12733)
 
-###  Regression Task: Predicting Night Heart Rate
+## Classification: Night Heart Rate Level (Low / Normal / High)
 
-**Objective:**  
-This regression task aimed to predict *Night Heart Rate (Night_HR)* using *Morning_HR*, *Afternoon_HR*, and *Evening_HR* as input features. A **Random Forest Regressor** was employed to model the relationship.
+This section summarizes the classification results for predicting Night Heart Rate (HR) levels based on Morning, Afternoon, and Evening HR data using a Random Forest Classifier.
 
----
+### Classes:
+- **Low**: Night_HR < 70 bpm  
+- **Normal**: 70 ≤ Night_HR < 90 bpm  
+- **High**: Night_HR ≥ 90 bpm
 
-###  Results Overview
+### Results:
+- The model achieved an overall accuracy of **44%**, meaning less than half of the predictions matched the actual class.
+- The majority of correctly predicted instances fall into the **"Normal"** class, which likely corresponds to the most frequent class in the dataset.
+- **Low** and **High** heart rate levels show a higher rate of misclassification, often being predicted as "Normal".
 
-- **Mean Squared Error (MSE):** ~91.24  
-  The average squared difference between the predicted and actual heart rate values.
+This indicates that while the model can capture average HR trends, it struggles to differentiate between borderline or extreme heart rate levels.
 
-- **R² Score:** 0.096  
-  The model explains only a small fraction of the variance in night heart rate, indicating limited predictive power.
+### Confusion Matrix Visualization:
 
----
-
-###  Interpretation
-
-- The model was able to learn some patterns from the input features but struggled to generalize effectively.
-- Most predicted values are concentrated around a narrow band, which may suggest **underfitting** or a tendency toward the average.
-- The low R² score reflects that the model performs only slightly better than random guessing.
-- To improve performance, incorporating additional contextual features (such as **step count**, **audio exposure**, or **sleep tracking data**) is recommended.
-
----
-
-###  Scatter Plot: Actual vs Predicted Night Heart Rate
-
-
-![night_hr_scatterplot](https://github.com/user-attachments/assets/13aab388-2171-403f-92a7-5d7e67533678)
-
-
-- Each point represents a daily prediction.
-- The red dashed line indicates perfect prediction (i.e., *predicted = actual*).
-- Points that deviate from the line show prediction errors.
-- The scatter is relatively wide, confirming the model's **moderate predictive capability** and the need for enhancement.
+![hr_classification_confusion_matrix](https://github.com/user-attachments/assets/1047bc2e-652a-444a-9ac7-229cb5354c8b)
