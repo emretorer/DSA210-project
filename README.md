@@ -315,26 +315,6 @@ The confusion matrix below evaluates the classification accuracy of the regressi
 The model demonstrates high accuracy for low to moderate step count predictions. While some misclassification exists, especially at higher bins, the results indicate reliable performance and point toward targeted improvements for extreme activity ranges.
 
 
-##  Limitations and Future Work
-
-###  Limitations
-
-- **Single-Participant Dataset**: This study is based on Apple Health data collected from a single user, which limits the generalizability of findings to broader populations.
-- **Limited Scope of Variables**: Only three variables — step count, heart rate, and headphone audio exposure — were available. Other important health or contextual metrics (e.g., sleep quality, stress, location, or activity type) were not included.
-- **Data Accuracy Concerns**: Audio exposure levels and heart rate data may contain noise due to environmental conditions or inconsistent device usage (e.g., AirPods not properly inserted, heart rate not continuously monitored).
-- **Timestamp Synchronization**: Some data sources were not consistently aligned in time, potentially affecting the accuracy of correlation and regression analyses.
-- **Short-Term Time Window**: The data spans a limited time frame, which may not reflect long-term behavior or seasonal patterns.
-
----
-
-###  Future Work
-
-- **Expand Sample Size**: Incorporate data from multiple individuals to increase representativeness and enable broader behavioral trends to be identified.
-- **Include Additional Variables**: Integrate other Apple Health metrics such as sleep patterns, workout types, respiratory rate, and mood tracking to uncover deeper relationships between physical activity and physiological/behavioral responses.
-- **Improve Audio Data Granularity**: Use app-specific audio exposure breakdowns (e.g., music vs podcast vs video calls) to understand the context of headphone usage more clearly.
-- **Longitudinal Analysis**: Extend the study duration to observe trends across months and seasons, providing a better understanding of habitual patterns and lifestyle shifts.
-- **Real-Time Analysis Potential**: Develop systems that provide feedback or alerts when unhealthy volume or heart rate patterns are detected.
-- **Model Optimization**: Explore more advanced machine learning models and feature engineering to improve predictive performance and personalization.
 
 # Machine learning
 
@@ -382,3 +362,24 @@ This indicates that while the model can capture average HR trends, it struggles 
 ### Confusion Matrix Visualization:
 
 ![hr_classification_confusion_matrix](https://github.com/user-attachments/assets/1047bc2e-652a-444a-9ac7-229cb5354c8b)
+
+##  Limitations and Future Work
+
+###  Limitations
+
+- **Single-Participant Dataset**: This study is based on Apple Health data collected from a single user, which limits the generalizability of findings to broader populations.
+- **Limited Scope of Variables**: Only three variables — step count, heart rate, and headphone audio exposure — were available. Other important health or contextual metrics (e.g., sleep quality, stress, location, or activity type) were not included.
+- **Data Accuracy Concerns**: Audio exposure levels and heart rate data may contain noise due to environmental conditions or inconsistent device usage (e.g., AirPods not properly inserted, heart rate not continuously monitored).
+- **Timestamp Synchronization**: Some data sources were not consistently aligned in time, potentially affecting the accuracy of correlation and regression analyses.
+- **Short-Term Time Window**: The data spans a limited time frame, which may not reflect long-term behavior or seasonal patterns.
+
+---
+
+###  Future Work
+
+- **Expand Sample Size**: Incorporate data from multiple individuals to increase representativeness and enable broader behavioral trends to be identified.
+- **Include Additional Variables**: Integrate other Apple Health metrics such as sleep patterns, workout types, respiratory rate, and mood tracking to uncover deeper relationships between physical activity and physiological/behavioral responses.
+- **Improve Audio Data Granularity**: Use app-specific audio exposure breakdowns (e.g., music vs podcast vs video calls) to understand the context of headphone usage more clearly.
+- **Longitudinal Analysis**: Extend the study duration to observe trends across months and seasons, providing a better understanding of habitual patterns and lifestyle shifts.
+- **Real-Time Analysis Potential**: Develop systems that provide feedback or alerts when unhealthy volume or heart rate patterns are detected.
+- **Model Optimization**: Explore more advanced machine learning models and feature engineering to improve predictive performance and personalization.
